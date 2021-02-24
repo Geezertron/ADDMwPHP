@@ -25,7 +25,7 @@
 				</a>
 		  	</div>
             <div id="col2">
-
+                   Hello world!
             </div>
             <div id="col3">
 				<nav class="navbar">
