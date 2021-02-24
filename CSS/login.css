@@ -1,0 +1,343 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	z-index: 0;
+    background-color: #393939;
+    color: #FFFFFF;
+    padding: 1em;
+}
+
+img {
+    max-width: 100%;
+    display:block;
+}
+#container {
+    background-color: #393939;
+}
+/*header content start*/
+#bannerContainer {
+    background-color: #606060;
+    width:100%;
+	height: 128px;
+
+}
+#col1 {
+    width: 20%;
+    float: left;
+    background-color: #606060;
+}
+#col1 img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#col2 {
+    width: 10%;
+	height: 100%;
+    float: left;
+    background-color: #6D6D6D;
+}
+#col3 {
+    width: 70%;
+	height:100%;
+    float: left;
+	background-color: #606060;
+	margin: auto;
+
+}
+.navbar{
+	padding-top: auto;
+	padding-bottom: auto;
+	max-width:60%;
+	margin:auto;
+}
+.open-slide{
+	margin-top: 2em;
+	margin-right: 0;
+	float: right;
+	position: relative;
+	display: none;
+}
+@media screen and (max-width:900px){
+	.open-slide{
+		display: flex;
+	}
+	.navbar-nav{
+		display: none;
+	}
+}
+.side-nav{
+	height:100%;
+	width: 0;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	right: 0em;
+	background-color: #2f4f4f;
+	opacity: 0.9;
+	padding-top: 4em;
+}
+.side-nav a{
+	padding: 8px 32px 8px 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: white;
+	display: block;
+	transition: 0.2s;
+}
+.side-nav a:hover{
+	color:#6D6D6D;
+}
+
+.side-nav .btn-close{
+	position: absolute;
+	top: 0;
+	left: 1em;
+	font-size: 36px;
+	margin-right: 50px;
+}
+
+#side-menu{
+
+	float: right;
+	display: none;
+}
+a{
+	text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+ul{
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	background-color: #6D6D6D;
+}
+
+.active{
+	color: #606060;
+	background-color: #888888;
+}
+
+
+/*header content finish*/
+/*-----------------------------------------*/
+/*main body content start*/
+#formBackground{
+	max-width: 80%;
+	margin: auto;
+	background-color: #2f4f4f;
+}
+
+#formActual{
+	width: 60%;
+	margin-left: 10%;
+	margin: auto;
+}
+/* Below line is used for online Google font */
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+h2{
+text-align: center;
+font-size: 24px;
+}
+hr{
+margin-bottom: 30px;
+}
+div.container{
+width: 960px;
+height: 610px;
+margin:50px auto;
+font-family: 'Droid Serif', serif;
+position:relative;
+}
+div.main{
+width: 320px;
+margin-top: 80px;
+float:left;
+padding: 10px 55px 40px;
+background-color: rgba(187, 255, 184, 0.65);
+border: 15px solid white;
+box-shadow: 0 0 10px;
+border-radius: 2px;
+font-size: 13px;
+}
+input[type=text],[type=password] {
+width: 97.7%;
+height: 34px;
+padding-left: 5px;
+margin-bottom: 20px;
+margin-top: 8px;
+box-shadow: 0 0 5px #00F5FF;
+border: 2px solid #00F5FF;
+color: #4f4f4f;
+font-size: 16px;
+}
+label{
+color: #464646;
+text-shadow: 0 1px 0 #fff;
+font-size: 14px;
+font-weight: bold;
+}
+#login {
+width: 45%;
+background: linear-gradient(#22abe9 5%, #36caf0 100%);
+border: 1px solid #888888;
+font-size: 20px;
+margin-top: 15px;
+padding: 8px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+text-shadow: 0px 1px 0px #888888;
+}
+#login:hover{
+background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+
+#regAccount {
+width: 45%;
+background: linear-gradient(#22abe9 5%, #36caf0 100%);
+border: 1px solid #888888;
+font-size: 20px;
+margin-top: 15px;
+margin-left: 2%;
+padding: 8px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+text-shadow: 0px 1px 0px #888888;
+}
+#regAccount:hover{
+background: linear-gradient(#36caf0 5%, #22abe9 100%);
+}
+/*main content finish*/
+/*--------------------------------------------------*/
+/*gallery css start*/
+#gallBreak{
+	clear: both;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.galleryContainer {
+  	position: relative;
+	max-width: 80%;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  	display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 40%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -50px;
+	  color: white;
+	  font-weight: bold;
+	  font-size: 20px;
+	  border-radius: 0 3px 3px 0;
+	  user-select: none;
+	  webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	  right: 0;
+	  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+	.prev:hover,
+	.next:hover {
+	  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	  color: #010101;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+	  text-align: center;
+	  background-color: #222;
+	  padding: 2px 16px;
+	  color: white;
+}
+
+.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+	  float: left;
+	  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+ 	 opacity: 1;
+}
+
+/*end of gallery css*/
+
+
+
+
+#footer {
+    clear: both;
+    background-color: #2A2A2A;
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+	height: 30px;
+}
+
+@media screen and (max-width:900px){
+	.contentTextL,.contentImgR{
+		width: 100%;
+		float: left;
+		position: relative;
+	}
+}
+@media screen and (max-width:900px){
+	#content1, #content2,#content3{
+		width: 90%;
+	}
+}
