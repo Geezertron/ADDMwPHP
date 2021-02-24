@@ -27,6 +27,7 @@
             <div id="col2">
                    Hello world!
                    goodbye
+                   and i'll see you tomorrow
             </div>
             <div id="col3">
 				<nav class="navbar">
